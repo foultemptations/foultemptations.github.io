@@ -40,7 +40,7 @@
     <p>Did you know? Cats are one of the most popular pets in the world. They sleep for about 13-16 hours a day and have excellent night vision. Cats also have a unique ability to purr, which is often associated with relaxation and contentment.</p>
     <div class="cat-images">
         <img src="foultemptations.github.io/cat 1.jpg" alt="A cute cat">
-        <img src="https://placekitten.com/301/200" alt="Another cute cat">
+        <img src="foultemptations.github.io/cat%201.jpg." alt="Another cute cat">
         <img src="https://placekitten.com/302/200" alt="Yet another cute cat">
     </div>
 </body>
