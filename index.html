@@ -41,11 +41,12 @@
             position: relative;
             z-index: 1;
         }
-
-        .cat-images img {
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
+.cat-images img {
+            width: 300px;         /* Set width to 300px */
+            height: 300px;        /* Set height to 300px */
+            object-fit: cover;    /* Ensures the image covers the space without stretching */
+            border-radius: 10px;  /* Optional: gives the images rounded corners */
+            border: 2px solid #ccc;  /* Optional: light border */
         }
     </style>
 </head>
