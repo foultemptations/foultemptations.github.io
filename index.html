@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cats!!</title>
     <style>
-        body {
+        body 
+        <div id="particles-js"></div>{
             text-align: center;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -31,8 +32,18 @@
             max-width: 300px;
             height: auto;
             border-radius: 10px;
-        }
-   </style>
+        }<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<style>
+    #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: #ffe4f0; /* pastel pink */
+    }
+</style>
 </head>
 <body>
     <h1>Cats!!</h1>
@@ -53,5 +64,46 @@
             <img src="images/cat-3.jpg" alt="Yet another cute cat">
         </a>
     </div>
+    <script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 80,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "circle"
+            },
+            "opacity": {
+                "value": 0.7,
+                "random": true
+            },
+            "size": {
+                "value": 3,
+                "random": true
+            },
+            "move": {
+                "enable": true,
+                "speed": 0.8
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
 </body>
 </html>
