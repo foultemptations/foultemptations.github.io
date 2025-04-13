@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cats!!</title>
+
+    <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <style>
-        body 
-        <div id="particles-js"></div>{
+        body {
             text-align: center;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            position: relative;
         }
-        h1 {
-            font-size: 4rem;
-            margin: 20px 0;
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            background-color: #ffe4f0; /* pastel pink */
         }
-        p {
-            font-size: 1.2rem;
-            margin: 20px;
-            line-height: 1.6;
+
+        h1, p {
+            position: relative;
+            z-index: 1;
         }
+
         .cat-images {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             margin: 20px;
+            position: relative;
+            z-index: 1;
         }
+
         .cat-images img {
             max-width: 300px;
             height: auto;
             border-radius: 10px;
-        }<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<style>
-    #particles-js {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        background-color: #ffe4f0; /* pastel pink */
-    }
-</style>
+        }
+    </style>
 </head>
 <body>
+    <!-- Animated starry background -->
+    <div id="particles-js"></div>
+
+    <!-- Main content -->
     <h1>Cats!!</h1>
     <p>Did you know? Cats are one of the most popular pets in the world. They sleep for about 13-16 hours a day and have excellent night vision. Cats also have a unique ability to purr, which is often associated with relaxation and contentment.</p>
+
     <div class="cat-images">
-        <!-- Make Cat 1 image clickable and link to cat1.html -->
-        <a href="cat-1.html">
+        <a href="cat1.html">
             <img src="images/cat-1.jpg" alt="A cute cat">
         </a>
-
-        <!-- Make Cat 2 image clickable and link to cat2.html (create cat2.html for this page) -->
-        <a href="cat-2.html">
-            <img src="images/cat-2.jpg" alt="Another cute cat">
-        </a>
-
-        <!-- Make Cat 3 image clickable and link to cat3.html (create cat3.html for this page) -->
-        <a href="cat-3.html">
-            <img src="images/cat-3.jpg" alt="Yet another cute cat">
-        </a>
+        <img src="images/cat-2.jpg" alt="Another cute cat">
+        <img src="images/cat-3.jpg" alt="Yet another cute cat">
     </div>
+
+    <!-- Particle script -->
     <script>
-    particlesJS("particles-js", {
-        "particles": {
-            "number": {
-                "value": 80,
-                "density": {
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.7,
+                    "random": true
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "move": {
                     "enable": true,
-                    "value_area": 800
+                    "speed": 0.8
                 }
             },
-            "color": {
-                "value": "#ffffff"
-            },
-            "shape": {
-                "type": "circle"
-            },
-            "opacity": {
-                "value": 0.7,
-                "random": true
-            },
-            "size": {
-                "value": 3,
-                "random": true
-            },
-            "move": {
-                "enable": true,
-                "speed": 0.8
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    }
                 }
-            }
-        },
-        "retina_detect": true
-    });
-</script>
+            },
+            "retina_detect": true
+        });
+    </script>
 </body>
 </html>
